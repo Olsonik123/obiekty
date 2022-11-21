@@ -1,0 +1,91 @@
+ class car
+    {
+        public string name;
+        public int year;
+
+        public car()
+        {
+            Console.WriteLine("wywołano konstruktor");
+        }
+        public void showCar()
+        {
+            Console.WriteLine("auto " + name + " " + year);
+        }
+    }
+    class car2
+    {
+        public string name;
+        public int year;
+
+        public car2()
+        {
+            name = "audi";
+            year = 2015;
+        }
+        public void showCar()
+        {
+            Console.WriteLine("auto " + name + " " + year);
+        }
+    }
+    class car3
+    {
+        public string name;
+        public int year;
+
+        public car3(string aname, int ayear)
+        {
+            name = aname;
+            year = ayear;
+        }
+        public void showCar()
+        {
+            Console.WriteLine("auto " + name + " " + year);
+        }
+    }
+    class car4
+    {
+        public string name;
+        public int year;
+
+        public car4(string aname, int ayear) 
+        {
+            name = aname;
+            year = ayear;
+        }
+        public car4()
+        {
+           
+        }
+        public void showCar()
+        {
+            Console.WriteLine("auto " + name + " " + year);
+        }
+    }
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            /* car auto1 = new car();
+             auto1.name = "bmw";
+             auto1.year = 2010;
+             auto1.showCar();
+             Console.ReadKey();*/
+            /*car2 auto2 = new car2();
+            auto2.showCar();
+            car3 auto3 = new car3("mercedes", 2015);
+            auto3.showCar();
+            Console.ReadKey(); */
+            car4 auto4 = new car4();
+            auto4.name = "opel";
+            auto4.year = 2012;
+            auto4.showCar();
+            car4 auto5 = new car4("ford", 2019);
+            auto5.showCar();
+
+            Console.ReadKey();
+
+
+        }
+    }
+}
